@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Howess AMMC"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$120"
+            android:textColor="#7B5CFA"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product description goes here..."
+            android:layout_marginTop="12dp"/>
+
+        <!-- Add to cart -->
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add to Cart"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#7B5CFA"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
